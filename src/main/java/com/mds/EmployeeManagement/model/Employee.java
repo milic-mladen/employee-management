@@ -1,7 +1,10 @@
 package com.mds.EmployeeManagement.model;
 
 import jakarta.persistence.*;
-import lombok.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
@@ -10,7 +13,6 @@ import lombok.*;
 @Entity
 @Table(name = "employees")
 public class Employee {
-
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

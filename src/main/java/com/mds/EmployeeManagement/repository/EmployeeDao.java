@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface EmployeeDao {
+
     void saveEmployee(Employee employee);
 
     Optional<Employee> getEmployeeById(Long id);
@@ -27,4 +28,5 @@ public interface EmployeeDao {
     boolean existsEmployeeByEmail(String email);
 
     boolean existsEmployeeById(Long id);
+    
 }

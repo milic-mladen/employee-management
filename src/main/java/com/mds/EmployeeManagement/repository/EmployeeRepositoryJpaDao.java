@@ -13,7 +13,6 @@ public class EmployeeRepositoryJpaDao implements EmployeeDao {
 
     private final EmployeeRepository employeeRepository;
 
-
     @Override
     public void saveEmployee(Employee employee) {
         employeeRepository.save(employee);

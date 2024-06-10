@@ -22,7 +22,7 @@ public class ExcelController {
 
     @PostMapping("/upload")
     public ResponseEntity<ResponseMessage> uploadFile(@RequestParam("file") MultipartFile file) {
-        String message="";
+        String message = "";
 
         if (excelHelper.hasExcelFormat(file)) {
             try {
@@ -38,4 +38,5 @@ public class ExcelController {
         message = "Please upload an excel file!";
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new ResponseMessage(message));
     }
+
 }

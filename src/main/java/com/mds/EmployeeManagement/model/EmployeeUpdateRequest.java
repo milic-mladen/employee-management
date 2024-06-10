@@ -6,7 +6,5 @@ public record EmployeeUpdateRequest(
         String username,
         String email,
         double salary
-) {
-
-}
+) {}
 

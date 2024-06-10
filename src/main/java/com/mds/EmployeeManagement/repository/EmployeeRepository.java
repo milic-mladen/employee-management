@@ -33,5 +33,7 @@ public interface EmployeeRepository extends JpaRepository<Employee, Long> {
     List<Employee> getEmployeesStartingWithA();
 
     boolean existsEmployeeByEmail(String email);
+
     boolean existsEmployeeById(Long id);
+
 }
